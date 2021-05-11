@@ -15,7 +15,7 @@ class NewUserNotification extends Notification
     /**
      * @var User
      */
-    private $user;
+    public $user;
 
     /**
      * Create a new notification instance.
