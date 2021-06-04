@@ -6,7 +6,6 @@ use App\Http\Requests\NewsletterRequest;
 use App\Mail\InviteSubscriberToBlogMail;
 use Illuminate\Support\Facades\Mail;
 use Spatie\Newsletter\Newsletter;
-use Newsletter as SpatieNewsletterFacade;
 
 class NewsletterController extends Controller
 {

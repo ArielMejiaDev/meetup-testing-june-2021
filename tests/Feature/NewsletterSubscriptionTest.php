@@ -56,6 +56,8 @@ class NewsletterSubscriptionTest extends TestCase
 
         $response = $this->postJson(route('api.newsletter.store'), ['email' => $email]);
 
-        $response->assertRedirect(route('welcome'));
+        $response->assertJson([
+            "success" => "Email agregado!"
+        ]);
     }
 }
